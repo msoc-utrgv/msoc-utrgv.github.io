@@ -14,29 +14,28 @@
 
 <!-- Navigation Bar -->
 <header>
-<nav class="navbar navbar-expand-md navbar fixed-top bg-white">
-  <div class="container-fluid">
-
-       <ul class="nav-item mb-0  ps-1">
-        <a class="nav-link work-sans-700" aria-current="page" href="index.html#home">
-          <img src="media/images/logo.png" width="300" height="50">
-        </a>
-       </ul>
-
-      <ul class="nav nav-underline justify-content-end offcanvas-sm">
-        <li class="nav-item">
-          <a class="nav-link work-sans-700" aria-current="page" href="#events">Events</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link work-sans-700" aria-current="page" href="index.html#about">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link work-sans-700" aria-current="page" href="index.html#contact">Contact</a>
-        </li>
-      </ul>
+  <nav class="navbar navbar-expand-md navbar fixed-top bg-white">
+    <div class="container-fluid">
+      <ul class="nav-item mb-0 ps-1">
+      <a class="nav-link work-sans-700" aria-current="page" href="index.html#home">
+        <img src="media/images/logo.png" width="300" height="50">
+      </a>
+     </ul>
+      
+        <ul class="nav nav-underline justify-content-end offcanvas-sm">
+          <li class="nav-item">
+            <a class="nav-link work-sans-700" aria-current="page" href="events.html">Events</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link work-sans-700" aria-current="page" href="resources.html">Resources</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link work-sans-700" aria-current="page" href="index.html#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
 </header>
 
 <!-- Main Text Content -->
@@ -79,10 +78,10 @@
         <div class="col-sm-6 col-12">
           <div class="card">
             <div class="card-body">
-              <h5 class="card-title">Pie Your Professor, 2025</h5>
-              <p class="card-text">Join us as we pie our mathematics professors on March 13th, 2025</p>
-              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Putnam">
-                More Information To Come
+              <h5 class="card-title">Lunch with Professor Spring 2025</h5>
+              <p class="card-text">Join us on March 26th for a networking Event With Professors</p>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Lunch">
+                See Flyer
               </button>
             </div>
           </div>  
@@ -126,24 +125,38 @@
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="FinalLabel">Undergraduate Tutoring</h5>
+          <h5 class="modal-title" id="TutorLabel">Undergraduate Tutoring</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
         <div class="row grayscale">
           <div class="col-lg-6 col-12 text-center">
-              <p class="work-sans-700">Brownsville Flyer</p>
-              <img src="media/images/MSOC_Tutoring_Spring2025.png" style="width: 100%; object-fit: cover;">
+            <p class="work-sans-700">Tutoring</p>
+            <img src="media/images/MSOC_Tutoring_Spring2025.png" style="width: 100%; object-fit: cover;">
+        </div>
+          <div class="col-lg-6 col-12 text-center">
+            <p class="work-sans-700"> Flyers</p>
+            <img src="media/images/MSOC_Chris_Tutoring_Spring2025.png" style="width: 100%; object-fit: cover;">
           </div>
-            <div class="col-lg-6 col-12 text-center">
-              <p class="work-sans-700">Edinburg Flyer</p>
-              <img src="media/images/MSOC_Chris_Tutoring_Spring2025.png" style="width: 100%; object-fit: cover;">
-            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
+
+  <div class="modal fade" id="Lunch" tabindex="-1" aria-labelledby="LunchLabel" aria-hidden="true"> 
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="PutnamLabel">Lunch With Professor Flyers</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="media/images/LunchS2025.png" style="width: 100%; object-fit: cover;">
+        </div>
+      </div>
+    </div>
+  </div> 
       
   <!-- <div class="modal fade" id="Putnam" tabindex="-1" aria-labelledby="PutnamLabel" aria-hidden="true"> 
     <div class="modal-dialog">
