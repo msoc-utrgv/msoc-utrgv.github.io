@@ -1,0 +1,16 @@
+{
+  "name": "Mathematical Society",
+  "logo": "media/images/logo.png",
+  "footerLogo": "media/images/logolarge.png",
+  "tagline": "Spreading mathematics across the Rio Grande Valley",
+  "email": "",
+  "location": "EMAGC 2.312, UTRGV Edinburg",
+  "social": [
+    {
+      "platform": "website",
+      "label": "V-Link",
+      "url": "https://utrgv.campuslabs.com/engage/organization/msoc"
+    }
+  ],
+  "footer": "Powered by Mathematical Society Contributors"
+}

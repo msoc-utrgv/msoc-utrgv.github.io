@@ -1,0 +1,22 @@
+{
+  "intro": "The Mathematical Society provides resources for students and staff to stay up to date on the department and events. Find related files and resources below.",
+  "groups": [
+    {
+      "id": "math-in-focus",
+      "title": "Math in Focus",
+      "description": "Math in Focus highlights staff and students in the School of Sciences and Mathematical Sciences. Read below the previous volumes and editions.",
+      "links": [
+        { "label": "Vol. 1 (Fall 2024)", "url": "media/resources/newslettervol1.pdf" }
+      ]
+    },
+    {
+      "id": "mathematics-competition",
+      "title": "Mathematics Competition",
+      "description": "View the Problems of the Yearly Mathematics Competition hosted by the Mathematical Society.",
+      "links": [
+        { "label": "Spring 2024", "url": "media/resources/mcompspring2024.pdf" },
+        { "label": "Fall 2024", "url": "media/resources/mcompfall2024.pdf" }
+      ]
+    }
+  ]
+}

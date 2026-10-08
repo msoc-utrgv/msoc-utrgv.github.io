@@ -1,0 +1,11 @@
+# Windows download markers
+*:Zone.Identifier
+# Python
+__pycache__/
+*.pyc
+# Temporary files from server.py
+.*.tmp
+# Wrangler (Cloudflare) local files
+node_modules/
+.wrangler/
+.dev.vars

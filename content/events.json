@@ -1,0 +1,70 @@
+{
+  "intro": "The Mathematical Society hosts many events and works to spread math in the RGV. The following events are dedicated to math inolving seminars, activities, and meetings for our organization.",
+  "calendarUrl": "https://calendar.google.com/calendar/embed?src=aba19f036f201ca94a8ee25d8bb088d0a0051d4379ee9c2d2efff27c7c7df93d%40group.calendar.google.com&ctz=America%2FChicago",
+  "events": [
+    {
+      "id": "lunch-with-the-professors-fall-2025",
+      "title": "Lunch with the Professors Fall 2025",
+      "date": "2025-10-28",
+      "startTime": "",
+      "endTime": "",
+      "when": "",
+      "location": "",
+      "summary": "On October 28, we'll have a networking event for students and professors offering free packaged lunch to attendees. RSVP using the link on the flyer.",
+      "description": "",
+      "images": ["media/images/MSOC_LWP_Flyer_Fall_2025.png"],
+      "linkLabel": "",
+      "linkUrl": "",
+      "hidden": false
+    },
+    {
+      "id": "undergraduate-tutoring",
+      "title": "Undergraduate Tutoring",
+      "date": "",
+      "startTime": "",
+      "endTime": "",
+      "when": "All week",
+      "location": "Edinburg and Brownsville",
+      "summary": "Tutoring for Math Classes provided by society members all week in Edinburg and Brownsville. Check the flyer for specific times and locations.",
+      "description": "",
+      "images": [
+        "media/images/Fall_2025_MSOC_Tutoring_Oscar.png",
+        "media/images/Fall_2025_MSOC_Tutoring_Isabella.png",
+        "media/images/Fall_2025_MSOC_Tutoring_Ben.png"
+      ],
+      "linkLabel": "",
+      "linkUrl": "",
+      "hidden": false
+    },
+    {
+      "id": "social-event",
+      "title": "Mathematical Society Social Event",
+      "date": "",
+      "startTime": "",
+      "endTime": "",
+      "when": "Date to be announced",
+      "location": "",
+      "summary": "A social event for the Mathematical Society will be hosted sometime this semester for members.",
+      "description": "The Flyer for the event with more details will be posted shortly.",
+      "images": [],
+      "linkLabel": "",
+      "linkUrl": "",
+      "hidden": false
+    },
+    {
+      "id": "algebra-and-number-theory-seminar",
+      "title": "Algebra and Number Theory Seminar",
+      "date": "",
+      "startTime": "",
+      "endTime": "",
+      "when": "Every Thursday",
+      "location": "",
+      "summary": "A new lecture from faculty and invited speakers every Thursday on topics of Number Theory and Algebra",
+      "description": "",
+      "images": [],
+      "linkLabel": "ANT Website",
+      "linkUrl": "https://faculty.utrgv.edu/luigi.ferraro/ANT/Spring25.html",
+      "hidden": false
+    }
+  ]
+}

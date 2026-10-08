@@ -1,0 +1,28 @@
+# Cloudflare Worker that lets admin.html sign in and save to GitHub.
+# Deploy from this folder with:  npx wrangler@latest deploy
+
+name = "websitebackend"
+main = "src/index.js"
+compatibility_date = "2025-10-01"
+workers_dev = true
+
+[vars]
+# The repository and branch that GitHub Pages publishes.
+GITHUB_REPO = "msoc-utrgv/msoc-utrgv.github.io"
+GITHUB_BRANCH = "main"
+# Pages that are allowed to call this Worker from a browser (comma separated).
+ALLOWED_ORIGINS = "https://msocutrgv.com,https://www.msocutrgv.com,http://localhost:8000"
+
+# At most 5 sign-in attempts per minute for each visitor and each username.
+[[ratelimits]]
+name = "LOGIN_LIMITER"
+namespace_id = "1001"
+
+  [ratelimits.simple]
+  limit = 5
+  period = 60
+
+# Secrets are NOT stored in this file. Set them once with:
+#   npx wrangler@latest secret put GITHUB_TOKEN     (GitHub token, Contents: read and write on the repo)
+#   npx wrangler@latest secret put SESSION_SECRET   (long random text, e.g. from: openssl rand -base64 48)
+#   npx wrangler@latest secret put USERS            (the line printed by: node make-users.mjs)

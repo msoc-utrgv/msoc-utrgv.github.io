@@ -1,0 +1,5 @@
+{
+  "name": "msoc-website-backend",
+  "private": true,
+  "type": "module"
+}

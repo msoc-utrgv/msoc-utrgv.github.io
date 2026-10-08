@@ -1,193 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Math Society</title>
 <meta charset="UTF-8">
-<link rel="shortcut icon" type="image/x-icon" href="media/images/icon.ico">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="keywords" content="RGV, Mathematical, Society, Events">
-<meta name="description" content="The Mathematical Society hosts many events and works to spread math in the RGV. The following events are dedicated to math inolving seminars, activities, and meetings for our organization.">
-<link rel="stylesheet" href="bootstrap.css">
-
+<title>Events · Mathematical Society at UTRGV</title>
+<meta name="description" content="Upcoming seminars, activities, tutoring and meetings hosted by the Mathematical Society at UTRGV, plus our calendar.">
+<link rel="icon" type="image/x-icon" href="media/images/icon.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@300;400&family=Work+Sans:wght@300;400;700&display=swap">
+<link rel="stylesheet" href="vendor/bootstrap.min.css">
+<link rel="stylesheet" href="css/site.css">
+<script defer src="vendor/bootstrap.bundle.min.js"></script>
+<script defer src="vendor/marked.min.js"></script>
+<script defer src="vendor/purify.min.js"></script>
+<script type="module" src="js/pages/events.js"></script>
 </head>
 <body>
 
-<!-- Navigation Bar -->
-<header>
-  <nav class="navbar navbar-expand-md navbar fixed-top bg-white">
-    <div class="container-fluid">
-      <ul class="nav-item mb-0 ps-1">
-      <a class="nav-link work-sans-700" aria-current="page" href="index.html#home">
-        <img src="media/images/logo.png" width="300" height="50">
-      </a>
-     </ul>
-      
-        <ul class="nav nav-underline justify-content-end offcanvas-sm">
-          <li class="nav-item">
-            <a class="nav-link work-sans-700" aria-current="page" href="events.html">Events</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link work-sans-700" aria-current="page" href="resources.html">Resources</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link work-sans-700" aria-current="page" href="index.html#contact">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-</header>
+<!-- The navigation bar, page content and footer are drawn by js/pages/events.js
+     from the JSON files in /content. Edit those through admin.html. -->
+<header id="site-header" class="sticky-top"></header>
+<main id="app"><p class="page-loading">Loading…</p></main>
+<footer id="site-footer" class="site-footer"></footer>
 
-<!-- Main Text Content -->
-<main>
-    <!-- Page content -->
-    <div class="content w-90 offset-05">
-
-    <!-- Events Section -->
-    <div class="container padding-large mt-5 mb-xxl-5 text-center">
-      <h1 class="py-lg-3 title modal-header d-block w-100 work-sans-700">Events</h1>
-      <p class="h3 work-sans-200">The Mathematical Society hosts many events and works to spread math in the RGV. The following events are dedicated to math inolving seminars, activities, and meetings for our organization.
-      </p>
-    </div>
-
-    <div class="row w-100 mb-5">
-      <div class="col-sm-6 col-12">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Lunch with the Professors Fall 2025</h5>
-              <p class="card-text">On October 28, we'll have a networking event for students and professors offering free packaged lunch to attendees. RSVP using the link on the flyer.</p>
-              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Final">
-                 Click Here for the Flyer!
-              </button>
-            </div>
-          </div>
-      </div>
-      <div class="col-sm-6 col-12">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Undergraduate Tutoring</h5>
-            <p class="card-text">Tutoring for Math Classes provided by society members all week in Edinburg and Brownsville. Check the flyer for specific times and locations.</p>
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Tutor">
-              See Flyer
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="row w-100 mb-5">
-        <div class="col-sm-6 col-12">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Mathematical Society Social Event</h5>
-              <p class="card-text">A social event for the Mathematical Society will be hosted sometime this semester for members.</p>
-              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#IBee">
-                See Flyer and More information
-              </button>
-            </div>
-          </div>  
-        </div>                      
-        <div class="col-sm-6 col-12">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Algebra and Number Theory Seminar</h5>
-              <p class="card-text">A new lecture from faculty and invited speakers every Thursday on topics of Number Theory and Algebra</p>
-              <a href="https://faculty.utrgv.edu/luigi.ferraro/ANT/Spring25.html" class="btn btn-primary">ANT Website</a>
-            </div>
-        </div>
-      </div> 
-    </div> 
-  
-  <!-- Modal -->
-  <div class="modal fade" id="Final" tabindex="-1" aria-labelledby="FinalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="FinalLabel">LWP Fall 2025 Flyer</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-        <div class="row grayscale">
-            <div class="col-lg-6 col-12 text-center">
-              <p class="work-sans-700">Flyer</p>
-              <img src="media/images/MSOC_LWP_Flyer_Fall_2025.png" style="width: 100%; object-fit: cover;">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div> 
-      
-  <div class="modal fade" id="Tutor" tabindex="-1" aria-labelledby="TutorLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="TutorLabel">Undergraduate Tutoring</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-        <div class="row grayscale">
-          <p class="work-sans-700">Tutoring Flyers</p>
-          <div class="col-lg-6 col-12 text-center">
-            <img src="media/images/Fall_2025_MSOC_Tutoring_Oscar.png" style="width: 100%; object-fit: cover;">
-        </div>
-          <div class="col-lg-6 col-12 text-center">
-            <img src="media/images/Fall_2025_MSOC_Tutoring_Isabella.png" style="width: 100%; object-fit: cover;">
-          </div>
-          <div class="col-lg-6 col-12 text-center">
-            <img src="media/images/Fall_2025_MSOC_Tutoring_Ben.png" style="width: 100%; object-fit: cover;">
-          </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="modal fade" id="IBee" tabindex="-1" aria-labelledby="IBeeLabel" aria-hidden="true"> 
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="IBeeLabel">Social Event</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <p class="work-sans-700"> Flyers</p>
-          <p class="work-sans-700">The Flyer for the event with more details will be posted shortly.</p>
-        </div>
-      </div>
-    </div>
-  </div> 
-      
-  <!-- <div class="modal fade" id="Putnam" tabindex="-1" aria-labelledby="PutnamLabel" aria-hidden="true"> 
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="PutnamLabel">Putnam Exam Preparation</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <img src="media/images/putnam.png" style="width: 100%; object-fit: cover;">
-        </div>
-      </div>
-    </div>
-  </div> -->
-
-
-    <!-- Calendar Section -->
-    <div class="container padding-large mt-5 mb-xxl-5 text-center w-100">
-      <h2 class="py-lg-3 title modal-header d-block w-100 work-sans-700">Calendar</h2>
-      <iframe src="https://calendar.google.com/calendar/embed?src=aba19f036f201ca94a8ee25d8bb088d0a0051d4379ee9c2d2efff27c7c7df93d%40group.calendar.google.com&ctz=America%2FChicago" class="w-100 vh-100" style="border: 0" frameborder="0" scrolling="yes"></iframe>
-    </div>
-
-</main>
-
-<!-- Footer -->
-<footer class="bg-secondary py-3 mt-4" style="border-top: 4px solid #F05023; z-index: 99">
-    <h3 class="text-center text-white work-sans-700">Powered by Mathematical Society Contributors</h3>
-</footer>
-</main>
-
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+<noscript><p class="text-center p-4">This website needs JavaScript to display its content.</p></noscript>
 </body>
-
 </html>

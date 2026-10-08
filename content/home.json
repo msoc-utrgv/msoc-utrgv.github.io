@@ -1,0 +1,54 @@
+{
+  "slides": [
+    {
+      "image": "media/images/banner1.jpg",
+      "title": "Mathematical Society",
+      "text": "Join us for meetings, connections, and to spread knowledge of mathematics across the Rio Grande Valley",
+      "buttonLabel": "Join Now!",
+      "buttonUrl": "https://forms.office.com/r/EkKq9FS4rH",
+      "align": "left"
+    },
+    {
+      "image": "media/images/Group_Pie_Day.jpg",
+      "title": "Mathematics Events",
+      "text": "At the Mathematical Society we host numerous amounts of events to promote mathematics activities and learning for the RGV community",
+      "buttonLabel": "Learn More",
+      "buttonUrl": "events.html",
+      "align": "center"
+    },
+    {
+      "image": "media/images/flag2.jpg",
+      "title": "Tutoring",
+      "text": "The Mathematical Society has several tutors available for help in most undergraduate courses all week",
+      "buttonLabel": "Learn more",
+      "buttonUrl": "events.html",
+      "align": "right"
+    },
+    {
+      "image": "media/images/UTRGV.jpg",
+      "title": "Newsletter",
+      "text": "Read the School of Mathematical and Statistical Science's Newsletter",
+      "buttonLabel": "Read Here",
+      "buttonUrl": "resources.html",
+      "align": "right"
+    }
+  ],
+  "contact": {
+    "image": "media/images/socroom.jpg",
+    "imageAlt": "MSOC Room",
+    "blocks": [
+      {
+        "heading": "Where are we?",
+        "text": "You can find us located on the second floor at EMAGC Room 2.312"
+      },
+      {
+        "heading": "How can I Join?",
+        "text": "Fill out the Microsoft Forms to join our Teams Chat and Get Announcements! Also join our V-Link"
+      }
+    ],
+    "buttons": [
+      { "label": "Microsoft Forms", "url": "https://forms.office.com/r/EkKq9FS4rH" },
+      { "label": "V-Link", "url": "https://utrgv.campuslabs.com/engage/organization/msoc" }
+    ]
+  }
+}

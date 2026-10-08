@@ -1,0 +1,19 @@
+{
+  "about": "The goals of the Mathematical Society at UTRGV (MSOC) are to transform and enrich the landscape of mathematics throughout the Rio Grande Valley by creating collaborative systems that address the needs of the community. The MSOC strives to pipeline students, at all levels, intoacademic and research excellence by providing networking, coding, and professional development opportunities. To date, the MSOC has hosted over twenty events on campus. The MSOC was created in April of 2023 byits founding fathers, Dr. Timothy Huber, Dr. Mike Lindstrom, Dr. Andrew Alaniz, and Mr. Joseph Alanis. We currently have over forty active undergraduate and graduate members combined and seven faculty advisors.",
+  "officers": [
+    { "name": "Marina Nacinanceno", "role": "President", "email": "marina.nacianceno01@utrgv.edu", "photo": "media/photos/marinanacinanceno-president.jpg" },
+    { "name": "Ben-Oni Spradlin", "role": "Vice-President", "email": "benoni.spradlin01@utrgv.edu", "photo": "media/photos/benonispradlin-vicepresident.jpg" },
+    { "name": "Raul Marquez", "role": "Treasurer", "email": "raul.marquez02@utrgv.edu", "photo": "media/photos/raulmarquez-treasurer.jpg" },
+    { "name": "Haily Martinez", "role": "Secretary", "email": "haily.martinez01@utrgv.edu", "photo": "media/photos/hailymartinez-secretary.jpg" },
+    { "name": "Oscar Sobrevilla-Mondragon", "role": "Member at Large", "email": "oscar.sobrevillamondragon01@utrgv.edu", "photo": "media/photos/oscarsobrevilla-memberatlarge.jpg" }
+  ],
+  "advisors": [
+    { "name": "Joseph Alanis", "role": "Faculty Advisor", "email": "joseph.alanis@utrgv.edu", "photo": "media/photos/josephalanis-facultyadvisor.jpg" },
+    { "name": "Andrew Alaniz", "role": "Faculty Advisor", "email": "andrew.alaniz01@utrgv.edu", "photo": "media/photos/andrewalaniz-facultyadvisor.jpg" },
+    { "name": "Timothy Huber", "role": "Faculty Advisor", "email": "timothy.huber@utrgv.edu", "photo": "media/photos/timothyhuber-facultyadvisor.jpg" },
+    { "name": "Guillermo Garza", "role": "Faculty Advisor", "email": "guillermo.garza@utrgv.edu", "photo": "media/photos/guillermogarza-facultyadvisor.jpg" },
+    { "name": "Mike Lindstrom", "role": "Faculty Advisor", "email": "mike.lindstrom@utrgv.edu", "photo": "media/photos/mikelindstrom-facultyadvisor.jpg" },
+    { "name": "Andrew Sebok", "role": "Faculty Advisor", "email": "andrew.sebok@utrgv.edu", "photo": "media/photos/andrewsebok-facultyadvisor.jpg" },
+    { "name": "Madhavi Devaboina", "role": "Faculty Advisor", "email": "madhavi.devaboina@utrgv.edu", "photo": "media/photos/madhavidevaboina-facultyadvisor.jpg" }
+  ]
+}

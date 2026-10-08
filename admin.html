@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Site Editor · Mathematical Society</title>
+<link rel="icon" type="image/x-icon" href="media/images/icon.ico">
+<link rel="stylesheet" href="vendor/bootstrap.min.css">
+<link rel="stylesheet" href="css/admin.css">
+<script defer src="vendor/marked.min.js"></script>
+<script defer src="vendor/purify.min.js"></script>
+<script type="module" src="js/admin/main.js"></script>
+</head>
+<body>
+
+<!-- Sign-in -->
+<div id="login-view" class="login" hidden>
+  <form id="login-form" class="login__card card" autocomplete="on">
+    <div class="card-body">
+      <img src="media/images/logo.png" alt="Mathematical Society" class="login__logo">
+      <h1 class="h4 mb-3">Site Editor</h1>
+      <div id="login-error" class="alert alert-danger py-2" role="alert" hidden></div>
+      <div class="mb-3">
+        <label class="form-label" for="login-username">Username</label>
+        <input class="form-control" id="login-username" name="username" autocomplete="username" required>
+      </div>
+      <div class="mb-3">
+        <label class="form-label" for="login-password">Password</label>
+        <input class="form-control" id="login-password" name="password" type="password" autocomplete="current-password" required>
+      </div>
+      <button class="btn btn-primary w-100" id="login-button" type="submit">Sign in</button>
+    </div>
+  </form>
+</div>
+
+<!-- Editor -->
+<div id="app-view" hidden>
+  <header class="admin-bar">
+    <span class="admin-bar__brand">MSOC Site Editor</span>
+    <span class="admin-bar__user">Signed in as <strong id="current-user"></strong></span>
+    <button class="btn btn-sm btn-outline-light" id="logout-button" type="button">Sign out</button>
+  </header>
+
+  <div class="admin-layout">
+    <nav class="admin-nav nav nav-pills" id="section-nav" aria-label="Pages"></nav>
+
+    <main class="admin-main">
+      <div class="admin-toolbar">
+        <h1 class="admin-toolbar__title" id="section-title"></h1>
+        <span class="save-status" id="save-status" role="status"></span>
+        <a class="btn btn-link" id="view-link" href="index.html" target="_blank" rel="noopener">View live page</a>
+        <button class="btn btn-outline-primary" id="preview-button" type="button">Preview</button>
+        <button class="btn btn-primary" id="save-button" type="button" disabled>Save</button>
+      </div>
+      <div id="alerts"></div>
+      <form id="editor" novalidate></form>
+    </main>
+  </div>
+</div>
+
+<noscript><p class="text-center p-4">The site editor needs JavaScript.</p></noscript>
+</body>
+</html>
