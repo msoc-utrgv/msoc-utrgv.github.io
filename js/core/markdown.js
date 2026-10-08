@@ -1,12 +1,14 @@
 // Markdown -> safe HTML. marked does the parsing and DOMPurify strips anything
 // that could run script, so text typed into the editor cannot inject code.
 import { h } from './dom.js';
+import { cleanPageUrl } from './address.js';
 
 const { marked, DOMPurify } = window;
 
 marked.setOptions({ gfm: true, breaks: true });
 
 DOMPurify.addHook('afterSanitizeAttributes', (node) => {
+  if (node.tagName === 'A' && node.hasAttribute('href')) node.setAttribute('href', cleanPageUrl(node.getAttribute('href')));
   if (node.tagName === 'A' && /^https?:/i.test(node.getAttribute('href') ?? '')) {
     node.setAttribute('target', '_blank');
     node.setAttribute('rel', 'noopener noreferrer');

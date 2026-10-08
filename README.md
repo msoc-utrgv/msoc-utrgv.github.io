@@ -16,7 +16,7 @@ python3 server.py
 Then open:
 
 - Website: http://localhost:8000/
-- Editor: http://localhost:8000/admin.html — sign in with `admin` / `msoc-local-preview`
+- Editor: http://localhost:8000/admin — sign in with `admin` / `msoc-local-preview`
 
 Opening the `.html` files by double-clicking will **not** work; browsers only
 load JavaScript modules and JSON over `http://`.
@@ -80,7 +80,7 @@ One-time setup, from the `worker/` folder (needs Node.js 20 or newer):
    - `npx wrangler@latest secret put SESSION_SECRET` — long random text, e.g. from `openssl rand -base64 48`.
    - `npx wrangler@latest secret put USERS` — the line printed by `node make-users.mjs`.
 4. Put the Worker's address in `js/admin/config.js`.
-5. Commit and push the site. The editor is then at `https://msocutrgv.com/admin.html`.
+5. Commit and push the site. The editor is then at `https://msocutrgv.com/admin`.
 
 Maintenance:
 
@@ -89,7 +89,7 @@ Maintenance:
 - **GitHub token expired or its owner left:** create a new token, `secret put GITHUB_TOKEN`.
 - **Sign everyone out:** set a new `SESSION_SECRET`.
 - **Site served from another address:** add it to `ALLOWED_ORIGINS` in `worker/wrangler.toml` and deploy.
-- To try the Worker from your own computer, open `http://localhost:8000/admin.html?backend=worker`.
+- To try the Worker from your own computer, open `http://localhost:8000/admin?backend=worker`.
   Saving there changes the real repository.
 
 Limits: uploads through the editor are capped at 8 MB; add larger files to

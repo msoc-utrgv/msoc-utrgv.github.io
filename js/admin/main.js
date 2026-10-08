@@ -1,6 +1,7 @@
 // Site editor: sign-in, section navigation, saving and previewing.
 import { h } from '../core/dom.js';
 import { saveDraft, clearDraft } from '../core/content.js';
+import { showCleanAddress } from '../core/address.js';
 import { api, isRemote } from './api.js';
 import { sections } from './sections.js';
 import { renderFields, validate, assignIds } from './forms.js';
@@ -160,6 +161,8 @@ for (const type of ['dragover', 'drop']) {
 }
 
 // ---------- start ----------
+
+showCleanAddress();
 
 try {
   const { user } = await api.session();

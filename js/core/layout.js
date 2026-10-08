@@ -2,6 +2,7 @@
 import { h, link, safeUrl } from './dom.js';
 import { icon, hasIcon } from './icons.js';
 import { loadContent, isPreview } from './content.js';
+import { showCleanAddress } from './address.js';
 
 // GitHub Pages serves events.html at /events, so links leave the extension off.
 const NAV_LINKS = [
@@ -79,6 +80,7 @@ function previewBanner() {
  * render(main) receives the empty <main> element to fill.
  */
 export async function mountPage(activePage, render) {
+  showCleanAddress();
   const main = document.getElementById('app');
   try {
     const site = await loadContent('site');

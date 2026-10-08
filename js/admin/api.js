@@ -1,7 +1,7 @@
 // Client for the editor's backend.
 //   On your own computer (localhost) it talks to server.py.
 //   Everywhere else it talks to the Cloudflare Worker in worker/.
-// Add ?backend=worker to admin.html on localhost to try the Worker from there.
+// Add ?backend=worker to the editor's address on localhost to try the Worker from there.
 import { WORKER_URL } from './config.js';
 
 const onLocalhost = ['localhost', '127.0.0.1'].includes(location.hostname);

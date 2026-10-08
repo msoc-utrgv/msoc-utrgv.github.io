@@ -1,4 +1,5 @@
 // Small DOM helpers shared by the public pages and the editor.
+import { cleanPageUrl } from './address.js';
 
 /**
  * Create an element. Text children are inserted as text nodes, so content
@@ -37,7 +38,7 @@ export function isExternal(url) {
 
 /** Anchor that opens external sites in a new tab. */
 export function link(url, props, ...children) {
-  const href = safeUrl(url);
+  const href = cleanPageUrl(safeUrl(url));
   const external = isExternal(href) ? { target: '_blank', rel: 'noopener noreferrer' } : {};
   return h('a', { href: href || '#', ...external, ...props }, ...children);
 }
