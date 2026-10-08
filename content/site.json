@@ -10,6 +10,11 @@
       "platform": "website",
       "label": "V-Link",
       "url": "https://utrgv.campuslabs.com/engage/organization/msoc"
+    },
+    {
+      "platform": "instagram",
+      "label": "Instagram",
+      "url": "https://www.instagram.com/msocutrgv/"
     }
   ],
   "footer": "Powered by Mathematical Society Contributors"
