@@ -13,7 +13,7 @@
       "title": "Mathematics Events",
       "text": "At the Mathematical Society we host numerous amounts of events to promote mathematics activities and learning for the RGV community",
       "buttonLabel": "Learn More",
-      "buttonUrl": "events.html",
+      "buttonUrl": "events",
       "align": "center"
     },
     {
@@ -21,7 +21,7 @@
       "title": "Tutoring",
       "text": "The Mathematical Society has several tutors available for help in most undergraduate courses all week",
       "buttonLabel": "Learn more",
-      "buttonUrl": "events.html",
+      "buttonUrl": "events",
       "align": "right"
     },
     {
@@ -29,7 +29,7 @@
       "title": "Newsletter",
       "text": "Read the School of Mathematical and Statistical Science's Newsletter",
       "buttonLabel": "Read Here",
-      "buttonUrl": "resources.html",
+      "buttonUrl": "resources",
       "align": "right"
     }
   ],

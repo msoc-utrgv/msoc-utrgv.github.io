@@ -27,7 +27,7 @@ export const sections = [
     id: 'events',
     label: 'Events',
     file: 'events',
-    page: 'events.html',
+    page: 'events',
     fields: [
       {
         key: 'events', label: 'Events', type: 'list', itemLabel: 'event', titleKey: 'title',
@@ -63,7 +63,7 @@ export const sections = [
     id: 'resources',
     label: 'Resources',
     file: 'resources',
-    page: 'resources.html',
+    page: 'resources',
     fields: [
       { key: 'intro', label: 'Text at the top of the page', type: 'markdown' },
       {
@@ -88,7 +88,7 @@ export const sections = [
     id: 'home',
     label: 'Home & Contact',
     file: 'home',
-    page: 'index.html',
+    page: './',
     fields: [
       {
         key: 'slides', label: 'Slideshow', type: 'list', itemLabel: 'slide', titleKey: 'title', thumbKey: 'image',
@@ -97,7 +97,7 @@ export const sections = [
           { key: 'title', label: 'Heading', type: 'text', required: true },
           { key: 'text', label: 'Text', type: 'textarea', rows: 2 },
           { key: 'buttonLabel', label: 'Button text', type: 'text', width: 4 },
-          { key: 'buttonUrl', label: 'Button link', type: 'url', width: 5, placeholder: 'https://… or events.html' },
+          { key: 'buttonUrl', label: 'Button link', type: 'url', width: 5, placeholder: 'https://… or events' },
           { key: 'align', label: 'Text alignment', type: 'select', width: 3,
             options: [['left', 'Left'], ['center', 'Center'], ['right', 'Right']] },
         ],
@@ -129,7 +129,7 @@ export const sections = [
     id: 'people',
     label: 'About & Officers',
     file: 'people',
-    page: 'index.html#about',
+    page: './#about',
     fields: [
       { key: 'about', label: 'About text', type: 'markdown' },
       { key: 'officers', label: 'Officers', ...person('officer') },
@@ -140,7 +140,7 @@ export const sections = [
     id: 'site',
     label: 'Site settings',
     file: 'site',
-    page: 'index.html',
+    page: './',
     fields: [
       { key: 'name', label: 'Organization name', type: 'text', required: true },
       { key: 'logo', label: 'Logo (top of every page)', type: 'image', folder: 'images', required: true, keepOriginal: true },

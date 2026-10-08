@@ -111,7 +111,7 @@ mountPage('events', async (main) => {
     calendar(content.calendarUrl),
   ].filter(Boolean));
 
-  // Allow sharing a link straight to one event: events.html#event-id
+  // Allow sharing a link straight to one event: /events#event-id
   const linked = visible.find((event) => `#${event.id}` === location.hash);
   if (linked && hasDetails(linked)) openDetails(linked);
 });

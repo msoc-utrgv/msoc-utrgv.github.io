@@ -104,6 +104,11 @@ class Handler(SimpleHTTPRequestHandler):
         hidden = any(part.startswith(".") for part in path.split("/"))
         if hidden or path.endswith((".py", ".pyc")):
             return self.send_error(HTTPStatus.NOT_FOUND)
+        # Like GitHub Pages: /events shows events.html.
+        page = ROOT / f"{path.strip('/')}.html"
+        if path != "/" and "." not in path.rsplit("/", 1)[-1] and page.is_file():
+            parts = urlsplit(self.path)
+            self.path = f"{path.rstrip('/')}.html" + (f"?{parts.query}" if parts.query else "")
         return super().do_GET()
 
     def do_POST(self):
@@ -267,7 +272,7 @@ def main():
 
     server = ThreadingHTTPServer(("127.0.0.1", args.port), Handler)
     print(f"Website:  http://localhost:{args.port}/")
-    print(f"Editor:   http://localhost:{args.port}/admin.html")
+    print(f"Editor:   http://localhost:{args.port}/admin")
     print(f"Sign in:  {ADMIN_USER} / {ADMIN_PASSWORD}   (local placeholder login)")
     print("Press Ctrl+C to stop.")
     try:

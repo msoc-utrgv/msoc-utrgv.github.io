@@ -429,7 +429,7 @@ export function validate(fields, data, trail = '') {
 
 const slug = (text) => String(text ?? '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '').slice(0, 50);
 
-/** Give new list items a stable id so they can be linked to (events.html#id). */
+/** Give new list items a stable id so they can be linked to (/events#id). */
 export function assignIds(fields, data) {
   for (const field of fields) {
     const value = data?.[field.key];

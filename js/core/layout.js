@@ -3,16 +3,17 @@ import { h, link, safeUrl } from './dom.js';
 import { icon, hasIcon } from './icons.js';
 import { loadContent, isPreview } from './content.js';
 
+// GitHub Pages serves events.html at /events, so links leave the extension off.
 const NAV_LINKS = [
-  { id: 'events', label: 'Events', href: 'events.html' },
-  { id: 'resources', label: 'Resources', href: 'resources.html' },
-  { id: 'contact', label: 'Contact', href: 'index.html#contact' },
+  { id: 'events', label: 'Events', href: 'events' },
+  { id: 'resources', label: 'Resources', href: 'resources' },
+  { id: 'contact', label: 'Contact', href: './#contact' },
 ];
 
 function renderHeader(site, activePage) {
   return h('nav', { class: 'navbar navbar-expand-md site-nav', 'aria-label': 'Main' },
     h('div', { class: 'container-fluid' },
-      h('a', { class: 'navbar-brand', href: 'index.html' },
+      h('a', { class: 'navbar-brand', href: './' },
         h('img', { src: site.logo, alt: site.name, height: '50' })),
       h('button', {
         class: 'navbar-toggler', type: 'button',
