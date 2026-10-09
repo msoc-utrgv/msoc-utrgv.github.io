@@ -38,15 +38,17 @@
     },
     {
       "id": "social-event",
-      "title": "Mathematical Society Social Event",
-      "date": "",
-      "startTime": "",
-      "endTime": "",
-      "when": "Date to be announced",
-      "location": "",
-      "summary": "A social event for the Mathematical Society will be hosted sometime this semester for members.",
-      "description": "The Flyer for the event with more details will be posted shortly.",
-      "images": [],
+      "title": "Open Mathematics Competition 2026",
+      "date": "2026-11-20",
+      "startTime": "12:30",
+      "endTime": "13:30",
+      "when": "",
+      "location": "EEDUC 1.102",
+      "summary": "Open Mathematics Competition will have tough problems and a test and offer prizes.",
+      "description": "Open Mathematics Competition will have tough problems and a test and offer prizes. Please RSVP with the link provided in the flyer if you're interested.",
+      "images": [
+        "media/images/Open-Mathematics-Competition-10.webp"
+      ],
       "linkLabel": "",
       "linkUrl": "",
       "hidden": false
