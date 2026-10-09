@@ -15,7 +15,7 @@
 //
 // Every call except login needs the header  Authorization: Bearer <token>.
 
-const CONTENT_FILES = new Set(['site', 'home', 'people', 'events', 'resources']);
+const CONTENT_FILES = new Set(['site', 'home', 'people', 'events', 'resources', 'mathcorner']);
 const UPLOAD_FOLDERS = new Set(['images', 'photos', 'resources']);
 const UPLOAD_EXTENSIONS = new Set(['.jpg', '.jpeg', '.png', '.gif', '.webp', '.avif', '.pdf']);
 const MAX_CONTENT_BYTES = 1024 * 1024;

@@ -43,12 +43,14 @@
       },
       {
         "heading": "How can I Join?",
-        "text": "Fill out the Microsoft Forms to join our Teams Chat and Get Announcements! Also join our V-Link"
+        "text": "To register, sign up on our V-Link and fill out the Membership Contract.\n\nIf you wish to be an **Active Member**, you may also send the $20 membership fee to the Cash App on the CashApp Flyer. The Membership Flyer explains what each membership includes.\n\nFill out the [Microsoft Forms](https://forms.office.com/r/EkKq9FS4rH) to join our Teams Chat and Get Announcements!"
       }
     ],
     "buttons": [
-      { "label": "Microsoft Forms", "url": "https://forms.office.com/r/EkKq9FS4rH" },
-      { "label": "V-Link", "url": "https://utrgv.campuslabs.com/engage/organization/msoc" }
+      { "label": "V-Link", "url": "https://utrgv.campuslabs.com/engage/organization/msoc" },
+      { "label": "Membership Contract", "url": "media/resources/membership-contract.pdf" },
+      { "label": "CashApp Flyer", "url": "media/resources/cashapp-flyer.pdf" },
+      { "label": "Membership Flyer", "url": "media/resources/membership-flyer.png" }
     ]
   }
 }

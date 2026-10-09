@@ -252,6 +252,18 @@ h1, h2, h3 { font-weight: 700; }
 .resource-list { display: grid; gap: 1.5rem; }
 .resource-card__links { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: 1rem; }
 
+/* ---------- Math Corner ---------- */
+
+.corner-tabs { margin-bottom: 1.5rem; font-family: var(--font-heading); }
+.corner-tabs .nav-link { color: var(--msoc-ink); font-weight: 400; }
+.corner-tabs .nav-link.active { font-weight: 700; border-top: 3px solid var(--msoc-orange); }
+.corner-intro { margin-bottom: 1.5rem; }
+.corner-list { display: grid; gap: 1.5rem; }
+.corner-empty { color: var(--bs-secondary-color); }
+.corner-reveal { margin-top: 1rem; }
+.corner-reveal > summary { cursor: pointer; font-family: var(--font-heading); font-weight: 700; color: var(--msoc-orange); }
+.corner-reveal > .md { margin-top: .75rem; padding: 1rem; background: var(--bs-tertiary-bg); border-radius: var(--bs-border-radius); }
+
 @media (prefers-reduced-motion: reduce) {
   .event-card__cover img { transition: none; }
 }

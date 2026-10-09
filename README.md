@@ -31,6 +31,7 @@ load JavaScript modules and JSON over `http://`.
 | --- | --- |
 | Events | Add / remove / reorder events; name, date, start and end time, location, summary, markdown description, flyers, button link; hide an event; intro text; calendar link |
 | Resources | Groups of files — drop a PDF in, give the button a label |
+| Math Corner | Tabs (e.g. Week 1, Challenges, Puzzles, Hints); each holds problems with markdown text and an optional click-to-reveal hint or solution; hide a tab or entry |
 | Home & Contact | Slideshow slides, contact photo, questions and buttons |
 | About & Officers | About text, officers and faculty advisors (name, position, email, photo) |
 | Site settings | Organization name, logo, and the footer: logo, tagline, contact email, location, social media links (icon + link), small print |
@@ -45,7 +46,7 @@ load JavaScript modules and JSON over `http://`.
 ## How it is organised
 
 ```
-index.html, events.html, resources.html   Page shells (title, description, scripts)
+index.html, events.html, resources.html, math-corner.html   Page shells (title, description, scripts)
 admin.html                                The site editor
 content/*.json                            ALL editable text and settings
 media/images, media/photos, media/resources   Pictures and files

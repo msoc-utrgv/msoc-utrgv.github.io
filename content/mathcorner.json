@@ -1,0 +1,45 @@
+{
+  "intro": "A place to stretch your mind between classes. Try the problem of the week, take on a challenge, or unwind with a puzzle.",
+  "tabs": [
+    {
+      "id": "week-1",
+      "title": "Week 1",
+      "intro": "The problem of the week. Work on it alone or with friends, and check the Hints tab if you get stuck.",
+      "entries": [
+        {
+          "id": "handshakes",
+          "title": "Problem 1: Handshakes",
+          "body": "At the first Mathematical Society meeting of the semester, every person shakes hands with every other person exactly once. In total, 66 handshakes take place.\n\nHow many people were at the meeting?",
+          "revealLabel": "",
+          "reveal": ""
+        }
+      ]
+    },
+    {
+      "id": "challenges",
+      "title": "Challenges",
+      "intro": "Harder problems for those who want to go further.",
+      "entries": []
+    },
+    {
+      "id": "puzzles",
+      "title": "Puzzles",
+      "intro": "Logic puzzles and brain teasers. No coursework required.",
+      "entries": []
+    },
+    {
+      "id": "hints",
+      "title": "Hints",
+      "intro": "Stuck? Open a hint only when you need it.",
+      "entries": [
+        {
+          "id": "week-1-hint",
+          "title": "Week 1: Handshakes",
+          "body": "Try it with small groups first.",
+          "revealLabel": "Show hint",
+          "reveal": "Count the handshakes for 2, 3, 4 and 5 people and look for a pattern. Each person shakes hands with everyone else, but every handshake involves two people."
+        }
+      ]
+    }
+  ]
+}

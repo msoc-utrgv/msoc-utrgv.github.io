@@ -85,6 +85,38 @@ export const sections = [
     ],
   },
   {
+    id: 'mathcorner',
+    label: 'Math Corner',
+    file: 'mathcorner',
+    page: 'math-corner',
+    fields: [
+      { key: 'intro', label: 'Text at the top of the page', type: 'markdown' },
+      {
+        key: 'tabs', label: 'Tabs', type: 'list', itemLabel: 'tab', titleKey: 'title', autoId: true,
+        help: 'Each tab is a section of the page, e.g. “Week 2”, “Challenges”. Drag the ⠿ handle to reorder; the first tab opens by default.',
+        summary: (item) => [`${item.entries?.length ?? 0} entr${item.entries?.length === 1 ? 'y' : 'ies'}`, item.hidden && 'Hidden'].filter(Boolean).join(' · '),
+        fields: [
+          { key: 'title', label: 'Tab name', type: 'text', required: true, placeholder: 'e.g. Week 2' },
+          { key: 'intro', label: 'Text at the top of the tab', type: 'markdown' },
+          {
+            key: 'entries', label: 'Problems, puzzles or hints', type: 'list', itemLabel: 'entry', titleKey: 'title', autoId: true,
+            summary: (item) => [item.reveal && 'Has hidden text', item.hidden && 'Hidden'].filter(Boolean).join(' · '),
+            fields: [
+              { key: 'title', label: 'Title', type: 'text', required: true },
+              { key: 'body', label: 'Text', type: 'markdown' },
+              { key: 'revealLabel', label: 'Hidden text button', type: 'text', width: 4, placeholder: 'Show hint',
+                help: 'e.g. Show hint, Show solution.' },
+              { key: 'reveal', label: 'Hidden text', type: 'markdown',
+                help: 'Optional. Visitors see this only after clicking the button above.' },
+              { key: 'hidden', label: 'Hide this entry from the website', type: 'checkbox' },
+            ],
+          },
+          { key: 'hidden', label: 'Hide this tab from the website', type: 'checkbox' },
+        ],
+      },
+    ],
+  },
+  {
     id: 'home',
     label: 'Home & Contact',
     file: 'home',

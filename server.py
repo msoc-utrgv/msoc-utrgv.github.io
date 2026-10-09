@@ -42,7 +42,7 @@ ROOT = Path(__file__).resolve().parent
 ADMIN_USER = os.environ.get("MSOC_ADMIN_USER", "admin")
 ADMIN_PASSWORD = os.environ.get("MSOC_ADMIN_PASSWORD", "msoc-local-preview")
 
-CONTENT_FILES = {"site", "home", "people", "events", "resources"}
+CONTENT_FILES = {"site", "home", "people", "events", "resources", "mathcorner"}
 UPLOAD_FOLDERS = {"images", "photos", "resources"}
 UPLOAD_EXTENSIONS = {".jpg", ".jpeg", ".png", ".gif", ".webp", ".avif", ".pdf"}
 MAX_CONTENT_BYTES = 1 * 1024 * 1024

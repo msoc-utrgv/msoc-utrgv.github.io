@@ -2,6 +2,17 @@
   "intro": "The Mathematical Society provides resources for students and staff to stay up to date on the department and events. Find related files and resources below.",
   "groups": [
     {
+      "id": "membership",
+      "title": "Membership & Registration",
+      "description": "To register as a member of the Mathematical Society:\n\n1. Register on our [V-Link page](https://utrgv.campuslabs.com/engage/organization/msoc).\n2. Fill out the Membership Contract linked below.\n\nIf you wish to be an **Active Member**, you may also send the $20 membership fee to the Cash App on the CashApp Flyer. Please include your full name and purpose in the Cash App note.\n\nThe Membership Flyer explains the requirements and benefits of each membership.",
+      "links": [
+        { "label": "V-Link", "url": "https://utrgv.campuslabs.com/engage/organization/msoc" },
+        { "label": "Membership Contract", "url": "media/resources/membership-contract.pdf" },
+        { "label": "CashApp Flyer", "url": "media/resources/cashapp-flyer.pdf" },
+        { "label": "Membership Flyer", "url": "media/resources/membership-flyer.png" }
+      ]
+    },
+    {
       "id": "math-in-focus",
       "title": "Math in Focus",
       "description": "Math in Focus highlights staff and students in the School of Sciences and Mathematical Sciences. Read below the previous volumes and editions.",

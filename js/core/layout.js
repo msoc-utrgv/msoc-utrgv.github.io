@@ -8,6 +8,7 @@ import { showCleanAddress } from './address.js';
 const NAV_LINKS = [
   { id: 'events', label: 'Events', href: 'events' },
   { id: 'resources', label: 'Resources', href: 'resources' },
+  { id: 'math-corner', label: 'Math Corner', href: 'math-corner' },
   { id: 'contact', label: 'Contact', href: './#contact' },
 ];
 
