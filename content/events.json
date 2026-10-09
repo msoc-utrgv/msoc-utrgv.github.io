@@ -12,7 +12,9 @@
       "location": "",
       "summary": "On October 28, we'll have a networking event for students and professors offering free packaged lunch to attendees. RSVP using the link on the flyer.",
       "description": "",
-      "images": ["media/images/MSOC_LWP_Flyer_Fall_2025.png"],
+      "images": [
+        "media/images/MSOC_LWP_Flyer_Fall_2025.png"
+      ],
       "linkLabel": "",
       "linkUrl": "",
       "hidden": false
@@ -28,9 +30,7 @@
       "summary": "Tutoring for Math Classes provided by society members all week in Edinburg and Brownsville. Check the flyer for specific times and locations.",
       "description": "",
       "images": [
-        "media/images/Fall_2025_MSOC_Tutoring_Oscar.png",
-        "media/images/Fall_2025_MSOC_Tutoring_Isabella.png",
-        "media/images/Fall_2025_MSOC_Tutoring_Ben.png"
+        "media/images/MSOC-Tutoring-F26-1.png"
       ],
       "linkLabel": "",
       "linkUrl": "",
