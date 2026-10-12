@@ -3,6 +3,23 @@
   "calendarUrl": "https://calendar.google.com/calendar/embed?src=aba19f036f201ca94a8ee25d8bb088d0a0051d4379ee9c2d2efff27c7c7df93d%40group.calendar.google.com&ctz=America%2FChicago",
   "events": [
     {
+      "title": "October General Meeting",
+      "images": [
+        "media/images/October-General-Meeting-1.png"
+      ],
+      "date": "2026-10-15",
+      "startTime": "16:00",
+      "endTime": "17:00",
+      "when": "",
+      "location": "EMAGC 2.308",
+      "summary": "On October 15th, we will meet to discuss memberships, officer and active members duties, risk management training, and discuss future events MSOC will be helping out with. ",
+      "description": "",
+      "linkLabel": "",
+      "linkUrl": "",
+      "hidden": false,
+      "id": "october-general-meeting"
+    },
+    {
       "id": "lunch-with-the-professors-fall-2025",
       "title": "Lunch with the Professors Fall 2025",
       "date": "2025-10-28",
